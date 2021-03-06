@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index2.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="container">
+        
+        <header class="header">
+          <h1 id="title" class="text-center">Formulario de información de educación universitaria</h1>
+          <p id="description" class="description text-center">
+            Dejanos saber acerca de tu formación universitaria
+          </p>
+        </header>
+
+        <form id="survey-form">
+
+          <div class="form-group">
+            <label id="name-label" for="nombre">Nombre</label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              class="form-control"
+              placeholder="Digita tu nombree"  
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="name-label" for="apellido">Apellido</label>
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              class="form-control"
+              placeholder="Digita tu apellido"  
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="email-label" for="email">Correo electrónico</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Digita tu correo electronico"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="admision-label" for="ingreso">Fecha de ingreso a tu universidad</label>
+            <input
+              type="date"
+              name="ingreso"
+              id="ingreso"
+              class="form-control"
+              required
+            />
+          </div>
+          
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Edad proyectada de graduación<span class="clue">(Si estas graduado coloca edad de graduación)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="1"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+
+          <div class="form-group">
+            <p>Estudiaste en universidad pública o privada</p>
+            <label>
+              <input
+                name="university-type"
+                value="publica"
+                type="radio"
+                class="input-radio"  * -----  BOLAS-CAJAS CHECKBOX ----- *
+                checked
+              />Publica</label
+            >
+            <label>
+              <input
+                name="university-type"
+                value="privada"
+                type="radio"
+                class="input-radio"  * -----  BOLAS-CAJAS CHECKBOX ----- *
+              />Privada</label
+            >
+          </div>
+          
+          <div class="form-group">
+            <p>Cual es la facultad de tu carrera? </p>
+            <select id="dropdown" name="faculty" class="form-control" required  * -----  DESPLEGABLES ----- *>  
+              <option disabled selected value>Seleccione la facultad</option>
+              <option value="Arte y Humanidades">Arte y Humanidades</option>
+              <option value="Ciencias">	Ciencias</option>
+              <option value="Ciencias Sociales y Jurídicas">Ciencias Sociales y Jurídicas</option>
+              <option value="Ingeniería y Arquitectura">Ingeniería y Arquitectura</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>Segun tu experiencia, recomendarias la educacion superior formal como alternativa de formación?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="Por supuesto"
+                type="radio"
+                class="input-radio"  * -----  BOLAS-CAJAS CHECKBOX ----- *
+                checked
+              />Por supuesto</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="No estoy seguro"
+                type="radio"
+                class="input-radio"  * -----  BOLAS-CAJAS CHECKBOX ----- *
+              />No estoy seguro</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="Para nada"
+                type="radio"
+                class="input-radio"  * -----  BOLAS-CAJAS CHECKBOX ----- *
+              />Para nada</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Que opción de grado escogiste o piensas escoger?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required  * -----  DESPLEGABLES ----- *  >
+              <option disabled selected value>Selecccione una opción</option>
+              <option value="Practicas y/o pasantias">Practicas y/o pasantias</option>
+              <option value="Proyecto de grado">Proyecto de grado</option>
+              <option value="Materias de postgrado">Materias de postgrado</option>
+              
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Cuales son las habilidades que desarrollas en tu carrera?
+              <span class="clue">(Puedes seleccionar mas de una)</span>
+            </p>
+      
+            <label>
+              <input
+                name="prefer"
+                value="Habilidades lógico-matemáticas"
+                type="checkbox"
+                class="input-checkbox"  * -----  BOLAS-CAJAS CHECKBOX ----- *
+              />Habilidades lógico-matemáticas</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Habilidades lingüísticas"
+                type="checkbox"
+                class="input-checkbox"  * -----  BOLAS-CAJAS CHECKBOX ----- *
+              />Habilidades lingüísticas</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Habilidades espaciales"
+                type="checkbox"
+                class="input-checkbox"  * -----  BOLAS-CAJAS CHECKBOX ----- *
+              />Habilidades espaciales</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Habilidades musicales"
+                type="checkbox"
+                class="input-checkbox"  * -----  BOLAS-CAJAS CHECKBOX ----- *
+              />Habilidades musicales</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Habilidades kinestésico-corporales"
+                type="checkbox"
+                class="input-checkbox"  * -----  BOLAS-CAJAS CHECKBOX ----- *
+              />Habilidades kinestésico-corporales</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Habilidades  intrapersonales"
+                type="checkbox"
+                class="input-checkbox"  * -----  BOLAS-CAJAS CHECKBOX ----- *
+              />Habilidades  intrapersonales</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Habilidades interpersonales"
+                type="checkbox"
+                class="input-checkbox"  * -----  BOLAS-CAJAS CHECKBOX ----- *
+              />Habilidades interpersonales</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Habilidades naturalistas"
+                type="checkbox"
+                class="input-checkbox"  * -----  BOLAS-CAJAS CHECKBOX ----- *
+              />Habilidades naturalistas</label
+            >
+            
+          </div>
+      
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comentarios"
+              class="input-textarea" * -----  CAJA COMENTARIOS ----- *
+              name="comentarios"
+              placeholder="Dejanos saber tus comentarios"
+            ></textarea>
+          </div>
+      
+          <div class="form-group">  
+            <button type="submit" id="submit" class="submit-button"  * -----  BOTON ----- *>
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      
+    
+</body>
+</html>
